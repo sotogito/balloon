@@ -14,6 +14,10 @@ var app = http.createServer(function(request,response){
       }else {
         topic.page(request,response);
       }
+
+    }else if(pathname === '/about_balloon'){
+      topic.about_balloon(request,response);
+    
       
     } else if(pathname === '/create'){
       topic.create(request,response);
